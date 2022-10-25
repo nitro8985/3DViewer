@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{3DViewer v1.0}
+\author{jdoomfis, aremedio, hnathani. (c) 21-school.ru}
+\date{June 2022}
+
+\begin{document}
+\maketitle
+
+\section{General}
+3DViewer v1.0 is a GUI application for viewing 3D wireframe models. The models themselves must be loaded from .obj files and be viewable on the screen with the ability to rotate, scale and translate.
+\section{Installation}
+You can build the programm right in the current directory from terminal by running \textbf{make viewer} , then run it as \textbf{./viewer}.
+Default installation: \textbf{make install}.
+To install it to custom directory run \textbf{./install.sh -t 'dirname'}.
+To uninstall use \textbf{make uninstall} or \textbf{./unistall.sh -f 'dirname'}.
+
+\section{Usage}
+Main window of the application contains :
+\begin{itemize}
+\item A button to select the model file and a field to output its name.
+\item A visualisation area for the wireframe model.
+\item Button/buttons and input fields for translating the model.
+\item Button/buttons and input fields for rotating the model.
+\item Button/buttons and input fields for scaling the model.
+\item Information about the uploaded model - file name, number of vertices and edges.
+\end{itemize}
+
+\end{document}
